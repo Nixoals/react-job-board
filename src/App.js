@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Jobs from './components/Jobs';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<>
+			<Header className={'main-header'} title={'The Job Board'}></Header>
+			<div className={'job-boards-container'}>
+				<Jobs className={'job-boards red'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards green'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards yellow'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards blue'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards salmon'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards red'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards green'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards yellow'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+				<Jobs className={'job-boards blue'} title={'Full Time Sales Associate - Sydney Boutique'} contractType={'CDI'} country={'Australia'} city={'Sydney'}></Jobs>
+			</div>
+			<Footer></Footer>
+		</>
+	);
+};
 
 export default App;
